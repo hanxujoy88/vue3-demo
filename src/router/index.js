@@ -1,7 +1,7 @@
 /*
  * @Author: hanxu03
  * @Date: 2021-11-11 10:40:28
- * @LastEditTime: 2021-11-15 16:01:47
+ * @LastEditTime: 2021-11-15 17:45:58
  * @LastEditors: hanxu03
  * @Description: 
  * @Enuma: Elish
@@ -45,18 +45,17 @@ const routes = [{
             import ('../views/hookTest.vue')
     },
     {
-        path: '/suspenseDemo',
-        name: 'Suspense',
-        component: () => {
-            import ('../views/suspenseDemo.vue')
-        }
-    },
-    {
         path: '/teleport',
         name: 'Teleport',
         component: () =>
             import ('../views/teleportDemo.vue')
-    }
+    },
+    {
+        path: '/suspenseDemo',
+        name: 'SuspenseDemo',
+        component: () =>
+            import ('../views/suspenseDemo.vue')
+    },
 ]
 
 const router = createRouter({
