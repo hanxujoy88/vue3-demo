@@ -1,7 +1,7 @@
 <!--
  * @Author: hanxu03
  * @Date: 2021-11-15 15:40:56
- * @LastEditTime: 2021-11-15 15:57:57
+ * @LastEditTime: 2021-11-15 16:57:59
  * @LastEditors: hanxu03
  * @Description: 
  * @Enuma: Elish
@@ -17,13 +17,7 @@
     </Suspense>
 </template>
 
-<script>
+<script setup>
 import { defineComponent } from 'vue'
-import asyncComponent from './asyncComponent.vue'
-
-export default defineComponent({
-    setup() {
-        return { asyncComponent }
-    }
-})
+const asyncComponent = defineComponent(() => import('./asyncComponent.vue'));
 </script>

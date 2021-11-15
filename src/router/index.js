@@ -48,7 +48,7 @@ const routes = [{
         path: '/suspenseDemo',
         name: 'Suspense',
         component: () => {
-            import ('../views/suspense.vue')
+            import ('../views/suspenseDemo.vue')
         }
     },
     {
