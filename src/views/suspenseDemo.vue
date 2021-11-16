@@ -1,7 +1,7 @@
 <!--
  * @Author: hanxu03
  * @Date: 2021-11-15 15:40:56
- * @LastEditTime: 2021-11-15 17:38:26
+ * @LastEditTime: 2021-11-16 15:16:21
  * @LastEditors: hanxu03
  * @Description: 
  * @Enuma: Elish
@@ -21,7 +21,7 @@
 import { defineAsyncComponent } from 'vue'
 export default {
     components: {
-        asyncComponent: defineAsyncComponent(() => import('./asyncComponent.vue'))
+        asyncComponent: defineAsyncComponent(() => import('../components/asyncComponent.vue'))
     }
 }
 </script>
