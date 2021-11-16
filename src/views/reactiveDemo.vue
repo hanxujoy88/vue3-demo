@@ -1,12 +1,13 @@
 <!--
  * @Author: hanxu03
  * @Date: 2021-11-10 21:03:54
- * @LastEditTime: 2021-11-10 21:23:12
+ * @LastEditTime: 2021-11-16 14:49:46
  * @LastEditors: hanxu03
  * @Description: 
  * @Enuma: Elish
 -->
 <template>
+<Button @click="increase()">加1</Button>
 <div>
     <p>第 {{ year }} 年</p>
     <p>姓名: {{ user.nickname }}</p>
@@ -24,11 +25,11 @@ export default defineComponent({
             nickname: 'xiaoming',
             age: 26
         });
-        setInterval(() => {
+        const increase = () => {
             year.value ++
             user.age ++
-        }, 1000);
-        return { year, user }
+        };
+        return { year, user, increase }
     },
 })
 </script>
