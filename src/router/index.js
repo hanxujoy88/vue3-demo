@@ -1,7 +1,7 @@
 /*
  * @Author: hanxu03
  * @Date: 2021-11-11 10:40:28
- * @LastEditTime: 2021-11-15 17:45:58
+ * @LastEditTime: 2021-12-10 17:06:41
  * @LastEditors: hanxu03
  * @Description: 
  * @Enuma: Elish
@@ -39,6 +39,12 @@ const routes = [{
             import ('../views/watchReactiveDeep.vue')
     },
     {
+        path: '/watchEffect',
+        name: 'WatchEffect',
+        component: () =>
+            import ('../views/watchEffect.vue')
+    },
+    {
         path: '/hookTest',
         name: 'HookTest',
         component: () =>
@@ -56,6 +62,12 @@ const routes = [{
         component: () =>
             import ('../views/suspenseDemo.vue')
     },
+    {
+        path: '/vModelNew',
+        name: 'VModelNew',
+        component: () => 
+            import ('../views/vModelParent.vue')
+    }
 ]
 
 const router = createRouter({
